@@ -133,8 +133,8 @@ type NotificationFeedResponse struct {
 }
 
 type Mark struct {
-	Seen bool `json:"seen,omitempty"`
-	Read bool `json:"read,omitempty"`
+	Seen bool `json:"seen"`
+	Read bool `json:"read"`
 }
 
 type MarkRequest struct {
