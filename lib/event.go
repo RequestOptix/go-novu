@@ -23,6 +23,7 @@ func (e *EventService) Trigger(ctx context.Context, eventId string, data ITrigge
 		To:        data.To,
 		Payload:   data.Payload,
 		Overrides: data.Overrides,
+		Actor:     data.Actor,
 	}
 
 	jsonBody, _ := json.Marshal(reqBody)
